@@ -4,6 +4,7 @@ import dotenv from "dotenv"
 dotenv.config()
 
 const wallet = new Wallet(process.env.MNEMONIC);
+// const wallet = new Wallet("desk pigeon hammer sleep only mistake stool december offer patrol once vacant");
 
 const contract_wasm = fs.readFileSync(
   "../contract.wasm.gz"
@@ -11,7 +12,7 @@ const contract_wasm = fs.readFileSync(
 
 const secretjs = new SecretNetworkClient({
   chainId: "pulsar-3",
-  url: "https://lcd.testnet.secretsaturn.net",
+  url: "https://pulsar.lcd.secretnodes.com",
   wallet: wallet,
   walletAddress: wallet.address,
 });
