@@ -1,2 +1,2 @@
 [template]
-exclude = [".circleci/config.yml"]
+exclude = [".circleci/config.yml", ".github/actions/install-rust/action.yml", ".github/workflows/Integration.yml", ".github/workflows/Static.yml"]
